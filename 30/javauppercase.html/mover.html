@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmousedown="mDown(this)"
+    onmouse="mUp(this)"
+    style="background-color: aqua;width: 90px; height: 20px;padding: 40px;">click me</div>
+    <script>
+        function mDown(obj){
+            obj.style.backgroundcolor="red";
+            obj.innerHTML="release me"
+        }
+        function mUp(obj){
+            obj.style.backgroundcolor="blue";
+            obj.innerHTML="thankyou"
+        }
+    </script>
+</body>
+</html>
